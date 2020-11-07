@@ -77,13 +77,6 @@ namespace BitwiseOperators
             return newI + newBinary;
         }
 
-        static string getbits(int x, int n, int p)
-        {
-            string inputString = Convert.ToString(x);
-            string subString = inputString.Substring(p - 1, n);
-            return subString;
-        }
-
         static int countSetBits(int x)
         {
             string binary = Convert.ToString(x, 2);
@@ -126,11 +119,9 @@ namespace BitwiseOperators
             //Console.WriteLine(substring(10101));
             //Console.WriteLine(substring(11111));
             //Console.WriteLine(substring(11100));
-            Console.WriteLine(toRight(10101));
-            Console.WriteLine(toRight(11111));
-            Console.WriteLine(toRight(11100));
-            //Console.WriteLine(getbits(110110, 4, 3));
-            //Console.WriteLine(getbits(110110, 2, 1));
+            //Console.WriteLine(toRight(10101));
+            //Console.WriteLine(toRight(11111));
+            //Console.WriteLine(toRight(11100));
             //Console.WriteLine(countSetBits(3));
             //Console.WriteLine(countSetBits(256));
 
